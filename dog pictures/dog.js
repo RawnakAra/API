@@ -5,7 +5,7 @@ const getDogPic =async()=>{
         creatImge(url.message) 
 }
 function creatImge (img){
-    document.querySelector('#img_home').innerHTML = `<img src='${img}' width='100px' height='100px'></img>`
+    document.querySelector('#img_home').innerHTML += `<img src='${img}' width='100px' height='100px'></img>`
 }
 getDogPic()
 btn.addEventListener('click',getDogPic)
